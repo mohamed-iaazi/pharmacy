@@ -24,23 +24,22 @@ public class ProduitController  {
 
     }
 
-    @GetMapping("/list")
+    @GetMapping("/list/")
     public Iterable<Produit> listeProduits() {
 
         return produitService.getAllProduits();
     }
 
+
     @PutMapping("/update")
-    public Produit updateProduit(@RequestBody Produit produit) {
-        return produitService.updateProduit(produit);
+    public void updateProduit(@RequestBody Produit produit) {
+        produitService.updateProduit(produit);
     }
 
-    @DeleteMapping("/delete")
-    public void deleteProduit(@RequestBody Produit produit) {
-          produitService.deleteProduit(produit.getId());
+    @DeleteMapping("/delete/{id}")
+    public void deleteProduit(@PathVariable Long id) {
+        produitService.deleteProduit(id);
     }
-
-
 
 
 }

@@ -26,8 +26,8 @@ public class ProduitService {
           produitRepository.deleteById(id);
     }
 
-    public Produit updateProduit(Produit produit) {
-        return produitRepository.save(produit);
+    public void updateProduit(Produit produit) {
+         produitRepository.save(produit);
     }
 
     public Produit addProduit(Produit produit) {
