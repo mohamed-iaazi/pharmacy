@@ -7,5 +7,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface ProduitRepository extends CrudRepository<Produit, Long> {
-    Produit getProduitsById(long id);
+
 }
