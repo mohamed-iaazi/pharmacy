@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "a709995e-ae8a-4dba-af0e-9eeb74051d4f",
+		"name": "produits",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "41335135"
+	},
+	"item": [
+		{
+			"name": "list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/api/produits/list/"
+			},
+			"response": []
+		},
+		{
+			"name": "delete produit",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nom\": \"test\",\r\n    \"description\": \"fkfkf\",\r\n    \"quantite\":\"nfkjnfg\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/produits/delete/4"
+			},
+			"response": []
+		},
+		{
+			"name": "new product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nom\": \"test\",\r\n    \"description\": \"fkfkf\",\r\n    \"quantite\":\"nfkjnfg\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/produits/add"
+			},
+			"response": []
+		},
+		{
+			"name": "update produit",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 2 ,\r\n    \"nom\": \"kamal\",\r\n    \"description\": \"mohamed\",\r\n    \"quantite\":\"24\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/produits/update"
+			},
+			"response": []
+		}
+	]
+}
